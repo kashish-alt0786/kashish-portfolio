@@ -1,81 +1,59 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
+// Typing Animation
 
-        const target = document.querySelector(this.getAttribute('href'));
+var typed = new Typed("#typing", {
 
-        if (target) {
-            target.scrollIntoView({
-                behavior: "smooth"
-            });
-        }
-    });
-});
+    strings: [
 
+        "AI Developer",
 
-// Fade-in animation while scrolling
-const sections = document.querySelectorAll("section");
+        "Machine Learning Enthusiast",
 
-const observer = new IntersectionObserver((entries) => {
+        "Healthcare AI Researcher",
 
-    entries.forEach(entry => {
+        "Medical Information Technology Student"
 
-        if(entry.isIntersecting){
+    ],
 
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0px)";
+    typeSpeed: 70,
 
-        }
+    backSpeed: 45,
 
-    });
+    backDelay: 1500,
 
-}, {
-
-    threshold:0.2
-
-});
-
-sections.forEach(section => {
-
-    section.style.opacity = "0";
-    section.style.transform = "translateY(40px)";
-    section.style.transition = "all 0.8s ease";
-
-    observer.observe(section);
+    loop: true
 
 });
 
 
-// Highlight active navigation item
-const navLinks = document.querySelectorAll("nav a");
+// Initialize Scroll Animation
 
-window.addEventListener("scroll", () => {
+AOS.init({
 
-    let current = "";
+    duration: 1000,
 
-    sections.forEach(section => {
+    once: false,
 
-        const top = section.offsetTop - 120;
+    offset: 100
 
-        if(window.scrollY >= top){
+});
 
-            current = section.getAttribute("id");
 
-        }
+// Navbar Background on Scroll
 
-    });
+window.addEventListener("scroll", function(){
 
-    navLinks.forEach(link => {
+    const nav = document.querySelector("nav");
 
-        link.style.color = "white";
+    if(window.scrollY > 50){
 
-        if(link.getAttribute("href") === "#" + current){
+        nav.style.background = "rgba(11,15,25,.95)";
 
-            link.style.color = "#38bdf8";
+    }
 
-        }
+    else{
 
-    });
+        nav.style.background = "rgba(11,15,25,.85)";
+
+    }
 
 });
