@@ -467,6 +467,17 @@ header{
     box-shadow:0 35px 80px rgba(139,92,246,.35);
 
 }
+.nav-links a.active{
+
+    color:#8B5CF6;
+
+}
+
+.nav-links a.active::after{
+
+    width:100%;
+
+}
 /* ================= 
       STATS 
 ================= */
