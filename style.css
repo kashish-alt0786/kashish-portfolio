@@ -339,37 +339,30 @@ header{
     transform:scale(1.04);
 
 }
-/* ===========================
-        STATS
-=========================== */
+/* ================= STATS ================= */
 
 .stats{
 
     width:90%;
-
     max-width:1200px;
-
-    margin:90px auto 130px;
+    margin:100px auto;
 
     display:grid;
-
     grid-template-columns:repeat(4,1fr);
-
-    gap:30px;
+    gap:25px;
 
 }
 
 .stat-card{
 
     background:rgba(30,41,59,.75);
+    backdrop-filter:blur(12px);
 
-    backdrop-filter:blur(18px);
-
-    border:1px solid rgba(139,92,246,.18);
+    border:1px solid rgba(139,92,246,.25);
 
     border-radius:22px;
 
-    padding:40px 25px;
+    padding:45px 30px;
 
     text-align:center;
 
@@ -381,9 +374,9 @@ header{
 
     transform:translateY(-10px);
 
-    border-color:#8B5CF6;
+    border-color:#8b5cf6;
 
-    box-shadow:0 20px 45px rgba(139,92,246,.22);
+    box-shadow:0 15px 35px rgba(139,92,246,.25);
 
 }
 
@@ -391,27 +384,23 @@ header{
 
     font-size:52px;
 
-    color:#8B5CF6;
+    color:#8b5cf6;
 
-    margin-bottom:18px;
-
-    font-weight:700;
+    margin-bottom:15px;
 
 }
 
 .stat-card p{
 
-    color:#CBD5E1;
+    color:#d1d5db;
 
     font-size:18px;
 
-    line-height:1.6;
+    font-weight:500;
 
 }
 
-/* Mobile */
-
-@media(max-width:900px){
+@media(max-width:992px){
 
 .stats{
 
