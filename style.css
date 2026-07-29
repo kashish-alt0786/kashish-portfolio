@@ -402,3 +402,112 @@ header{
     font-size:16px;
 
 }
+/* ===========================
+        ABOUT
+=========================== */
+
+.about{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:120px auto;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+    color:#8B5CF6;
+
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    color:#94A3B8;
+
+}
+
+.about-container{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:60px;
+
+}
+
+.about-text h3{
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+}
+
+.about-text p{
+
+    color:#CBD5E1;
+
+    margin-bottom:22px;
+
+    font-size:17px;
+
+}
+
+.about-cards{
+
+    display:grid;
+
+    gap:22px;
+
+}
+
+.info-card{
+
+    background:#1E293B;
+
+    border-radius:18px;
+
+    padding:28px;
+
+    transition:.35s;
+
+    border:1px solid rgba(255,255,255,.05);
+
+}
+
+.info-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#8B5CF6;
+
+}
+
+.info-card h3{
+
+    color:#8B5CF6;
+
+    margin-bottom:12px;
+
+}
+
+.info-card p{
+
+    color:#CBD5E1;
+
+}
