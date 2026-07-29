@@ -351,15 +351,35 @@ header{
 
     margin:0 auto 120px;
 
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
+    display:flex;
 
     gap:25px;
+
+    overflow-x:auto;
+
+    scroll-behavior:smooth;
+
+    scroll-snap-type:x mandatory;
+
+    padding-bottom:10px;
+
+    scrollbar-width:none;
+
+}
+
+.stats::-webkit-scrollbar{
+
+    display:none;
 
 }
 
 .stat-card{
+
+    min-width:280px;
+
+    flex-shrink:0;
+
+    scroll-snap-align:start;
 
     background:#1E293B;
 
