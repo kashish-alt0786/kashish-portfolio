@@ -1028,6 +1028,93 @@ grid-template-columns:1fr;
 }
 
 }
+/* ===========================
+        SKILLS
+=========================== */
+
+.skills{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:140px auto;
+
+}
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+.skill-card{
+
+    background:#1E293B;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    transition:.35s;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(139,92,246,.2);
+
+}
+
+.skill-card h3{
+
+    color:#8B5CF6;
+
+    margin-bottom:20px;
+
+}
+
+.skill-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.skill-tags span{
+
+    background:#8B5CF6;
+
+    color:white;
+
+    padding:10px 16px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+@media(max-width:768px){
+
+.skills-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
 /* ================= CONTACT ================= */
 
 .contact{
