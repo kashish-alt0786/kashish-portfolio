@@ -616,3 +616,60 @@ header{
     gap:20px;
 
 }
+/* ===========================
+        PUBLICATIONS
+=========================== */
+
+.publications{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:140px auto;
+
+}
+
+.publication-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+}
+
+.publication-card{
+
+    background:#1E293B;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    transition:.35s;
+
+}
+
+.publication-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.publication-card h3{
+
+    color:#8B5CF6;
+
+    margin-bottom:18px;
+
+}
+
+.publication-card p{
+
+    color:#CBD5E1;
+
+    margin-bottom:30px;
+
+}
