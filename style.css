@@ -1195,21 +1195,33 @@ grid-template-columns:1fr;
 }
 
 }
-/* ================= FOOTER ================= */
+/* ===========================
+        FOOTER
+=========================== */
 
 footer{
 
+    background:#020617;
+
     margin-top:120px;
 
-    padding:60px 20px;
+    padding:70px 0;
 
-    background:#020617;
+}
+
+.footer-content{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
 
     text-align:center;
 
 }
 
-footer h2{
+.footer-content h2{
 
     color:#8B5CF6;
 
@@ -1217,10 +1229,42 @@ footer h2{
 
 }
 
-footer p{
+.footer-content p{
+
+    color:#CBD5E1;
+
+}
+
+.footer-links{
+
+    margin:35px 0;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+}
+
+.footer-links a{
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#8B5CF6;
+
+}
+
+.copyright{
+
+    margin-top:30px;
 
     color:#94A3B8;
 
-    margin-bottom:10px;
+    font-size:15px;
 
 }
