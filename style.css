@@ -1133,41 +1133,6 @@ grid-template-columns:1fr;
 }
 
 }
-.github{
-
-    width:90%;
-    max-width:1200px;
-    margin:140px auto;
-
-}
-
-.github-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:30px;
-
-}
-
-.github-grid img{
-
-    width:100%;
-
-    border-radius:20px;
-
-}
-
-@media(max-width:900px){
-
-.github-grid{
-
-grid-template-columns:1fr;
-
-}
-
-}
 /* ===========================
         CONTACT
 =========================== */
