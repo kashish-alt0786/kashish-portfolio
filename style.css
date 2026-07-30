@@ -364,22 +364,15 @@ header{
 .hero-right img{
 
     width:380px;
-
     height:380px;
-
-    border-radius:50%;
 
     object-fit:cover;
 
+    border-radius:50%;
+
     border:6px solid #8B5CF6;
 
-    box-shadow:
-
-        0 0 30px rgba(139,92,246,.35),
-
-        0 0 80px rgba(139,92,246,.18);
-
-    transition:.4s;
+    box-shadow:0 25px 60px rgba(139,92,246,.25);
 
 }
 
